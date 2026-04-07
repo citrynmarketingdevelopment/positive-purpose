@@ -1,26 +1,20 @@
-import { Bungee, Geist_Mono, Space_Grotesk } from "next/font/google";
+import { Lexend, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-sans",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-headline",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lexend = Lexend({
+  variable: "--font-body",
   subsets: ["latin"],
-});
-
-const bungee = Bungee({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: "400",
 });
 
 export const metadata = {
-  title: "Citryn Next Boilerplate",
+  title: "Positive Purpose | Empowering Independence",
   description:
-    "Citryn starter repo for Next.js projects with Zustand installed and Prisma-ready environment placeholders.",
+    "Compassionate, community-centered support for adults with developmental disabilities and the families who love them.",
   icons: {
     icon: "/citryn-gold.png",
     shortcut: "/citryn-gold.png",
@@ -30,11 +24,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${spaceGrotesk.variable} ${geistMono.variable} ${bungee.variable}`}
-    >
-      <body suppressHydrationWarning={true}>{children}</body>
+    <html lang="en" className={`${plusJakartaSans.variable} ${lexend.variable}`}>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }
