@@ -167,7 +167,7 @@ svg {
   transition: color 180ms ease;
 }
 
-.pp-nav-link:first-child {
+.pp-nav-link-active {
   color: var(--pp-primary);
 }
 

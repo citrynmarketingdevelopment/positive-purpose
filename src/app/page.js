@@ -1,11 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
-const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#gallery", label: "Gallery" },
-];
+import SiteHeader, { siteNavLinks } from "../components/site-header";
 
 const commitmentItems = [
   {
@@ -346,23 +340,7 @@ export default function Home() {
 
   return (
     <main className="pp-page">
-      <nav className="pp-nav">
-        <div className="pp-nav-inner">
-          <a className="pp-brand" href="#home">
-            Positive Purpose
-          </a>
-          <div className="pp-nav-links" aria-label="Primary">
-            {navLinks.map((link) => (
-              <a key={link.href} className="pp-nav-link" href={link.href}>
-                {link.label}
-              </a>
-            ))}
-          </div>
-          <a className="pp-nav-button" href="#contact">
-            Connect
-          </a>
-        </div>
-      </nav>
+      <SiteHeader active="home" />
 
       <section className="pp-hero-section" id="home">
         <div className="pp-shell pp-hero-grid">
@@ -533,10 +511,10 @@ export default function Home() {
                 interactions we support.
               </p>
             </div>
-            <button className="pp-gallery-button" type="button">
+            <a className="pp-gallery-button" href="/gallery">
               View Full Gallery
               <Icon className="pp-gallery-button-icon" name="external" />
-            </button>
+            </a>
           </div>
 
           <div className="pp-gallery-grid">
@@ -638,8 +616,8 @@ export default function Home() {
           <div>
             <h3 className="pp-footer-heading">Quick Links</h3>
             <ul className="pp-footer-list">
-              {navLinks.map((link) => (
-                <li key={link.href}>
+              {siteNavLinks.map((link) => (
+                <li key={link.key}>
                   <a href={link.href}>{link.label}</a>
                 </li>
               ))}
