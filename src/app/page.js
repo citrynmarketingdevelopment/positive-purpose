@@ -1,5 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import SiteHeader, { siteNavLinks } from "../components/site-header";
+import heroMiddlePhoto from "../assets/positive-purpose-01.webp";
+import heroTopPhoto from "../assets/positive-purpose-02.webp";
+import heroBottomPhoto from "../assets/positive-purpose-03.webp";
+import aboutRightPhoto from "../assets/positive-purpose-05.webp";
+import aboutLeftPhoto from "../assets/positive-purpose-06.webp";
+import reasonsMainPhoto from "../assets/positive-purpose-08.webp";
+import reasonsSidePhoto from "../assets/positive-purpose-09.webp";
 
 const commitmentItems = [
   {
@@ -81,56 +88,56 @@ const reasonItems = [
 
 const galleryPhotos = [
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDWmMLlRLeGP_B87wDYx3Vc4UZg6SZRudyWxMIzdoZlOFxJ9PZVcXy2QG1fXWvIHj369MdzIHxLSau2DSUXn7LuyPktRvJJKEcdvMUTjNNRX9I9-DDHHk0i5ukOrPRrrBOKd3hEbExyb1botZ0lbgCE4jdqgofHvqpA4ZF8k_O2EVtCzNfNUHRKCNWV28zYQxZvk1bXQTnf3Sd2j8LYYt0dNqCVHzL0cX3ZdHwlIJhqHpiG6OFMDUoSE7RAWOQcwTMni1DUnAnKLZvV",
+    src: heroTopPhoto.src,
     alt: "Celebration at a community gathering",
     frameClass: "pp-gallery-card-a",
     tapeClass: "pp-tape-center pp-tape-primary",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDZahcBIgwZq-jilrPwhao8Jy-n5k6vI3uq0qK3xsJoigujt1CjbIv0OeZ7AdzwOa1qQp9sWpXU1KoLnGqukuL7_DDpj-m3VLmW7pLM16LgqATQ17GQsqBxSeTGCsGvon4mC24euTE2TA2sGbdfH_u-7IaLe8scvt32Vg5PQG1ZpaC7H-fwzGWqFZlYUUL9dPjDgkGkmfyjOnRCk2r1M5EjSW7iBOtMy5CJiWsWFr2VO3RlssewF3PEuOrTDYdZIi7OPICfP6dSdhMt",
+    src: heroMiddlePhoto.src,
     alt: "Outdoor picnic with friends",
     frameClass: "pp-gallery-card-b",
     tapeClass: "pp-tape-top-right",
     imageClass: "pp-gallery-image-tall",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB0x5eVaVmOQ-BEwAcwgjSVCbBTJk6EeuaQb4lGYH39ZUK5R6OOUh8aMP-Em0D0GZLFx5NXp1hm0_IDp19xq34rRsQaO7lLzRJi8Ii8avHKjD9BQFavt9vZ0HFpzm2uvGshlYxkopPofiIEn5TC4cvzu8iXGw3kved5SZ669W39rAxqhV7xAa0NWO7FwHRamOMnNYGKjpCQ8H8sSmuhsX1tgu4S1lliz-frvSYixPXf7ic_am1KpASgqLsQQPB9nt3sU3AB9xUnAVFT",
+    src: aboutRightPhoto.src,
     alt: "Collaborative art project",
     frameClass: "pp-gallery-card-c",
     tapeClass: "pp-tape-top-left pp-tape-secondary",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA4jzvq_jbVVsiI4vala3bxdMr31fO3iTn6p4Zu02ZU6NJrekDuUsJKV5H74XPXfd0mPt4rMFlYLinPx41qtyZRGcVXuehqIRLMxjZ4Fqd15ZhKlG4z1XGprKSRrd7T5fXF_SCdBAeA21-Z-oARVl2FSHv7vR1ZQOBa1Dx578vjZ2WMGDZzF1jWflkOMCYRWDs2DzoQFr5Hn_bXIuG_4Mc18MPFD-aqMpgxFgO4NQ60lUXm7p1ZWk5E6W6N9XxYhppVcgjWtwO4U1oR",
+    src: aboutLeftPhoto.src,
     alt: "Holiday dinner celebration",
     frameClass: "pp-gallery-card-d",
     tapeClass: "pp-tape-center",
     imageClass: "pp-gallery-image-medium",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCzKstWuXkYCbCqZPADI8gokE226adOFWAalbDY1qE2HlKDEVGUFzN-pwkiIyx5xTupe9AUD5xJViliHtj5J5Fyc-ngnQpSmj2kcUJ4u9gnx280NqugDlLkHEwdytJLvdpnGZuuAukhDExwjvetBA4P9_M3885q5jT9j2cj86Gs4CZmNgcd_nI4TS4A47WY9bfYkh52ikNPSBfF6YvblFVPlBTUR8DFbJe7goFa28LehI3nd1hH9c_iuwWk9FTwFQM4luAlQcyy54bu",
+    src: reasonsSidePhoto.src,
     alt: "Friends laughing together at a cafe",
     frameClass: "pp-gallery-card-e",
     tapeClass: "pp-tape-top-left pp-tape-tertiary",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuATsgUPKzer5NLasFBXexTYuT-HwEjjJYG3i-87PuKU2vJhABc6AXlmV6wmJecGcmIDJwgpLc9AmMYMNN-NSx7kdBOashv229MWG5nF9S2m9mIs1h1z4nP3UUmBfGxCoH_TASuehP8R0pkdMpLot1p7OkmuJKmpNe0yywmwGe2-LwjFY3jfo5ra-RT8nUU2A7N5Mn2EXEc32L6pYZ0zuFCin5Ep3b345UAVBJBAhWDLHyATMb6VfIS6rp4xud7dVeVPsX9CV4PXGd57",
+    src: heroBottomPhoto.src,
     alt: "Person with disability learning guitar",
     frameClass: "pp-gallery-card-f",
     tapeClass: "pp-tape-top-right",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuARRCRSR_hfuQvg7f91Y99NUNsziBN6XjBvKPBSeyK7eGFjPhsCy4_wERaWa1PZ6p2XWBLkJFnlgB16A_Xri2meklQEVY3VBShHlnGWU7UXbP1oQwyZEQTAVAsTPFAX_piQvJSI9w4-3GyCqn0JrlzJpCHsY8llZ9dDTF8pAao_ngiHIDMJOjgwOJyxEnWrdeeU_q76TGFaoQS6UEchX14j7xib74nysFgvyro8R39GQBrjBxBlrR5abvQcfgoefvnVt4jvSDOg0Q3V",
+    src: reasonsMainPhoto.src,
     alt: "Shared supportive moment",
     frameClass: "pp-gallery-card-g",
     tapeClass: "pp-tape-center pp-tape-primary",
     imageClass: "pp-gallery-image-tall",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDpKSg48t_Yv_uuBEGkqK3CcNF5o28LfXYW-pdw_R-3uStUt_R8MPy1J3WCJgydYJFgyuHH4oR15NOuWjUbSjnZwQTni3e8aWBd0oXHROsDJJzEkvm2HJb73y1Qd3EyUn8FNiRgQuJCa5GWtzHa0_pzscJw_TPDGfycEOUu1RDlAJOLzEKuNNrgkwpEsngpwc6C3gyPy499i4IrbGdXsVoPp40aOkSnKa7QTDReAwVi87iLeR4lJc7gy3CC29FW2B0fpgMB73wGMAmX",
+    src: aboutRightPhoto.src,
     alt: "Community volunteer activity",
     frameClass: "pp-gallery-card-h",
     tapeClass: "pp-tape-top-left",
@@ -373,21 +380,21 @@ export default function Home() {
                 className="pp-hero-photo-main"
                 imageClassName="pp-hero-main-image"
                 priority
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMu0vzNHRXVrrQQljgg7jiyCg0TBkSVULwfmKigAMvDhsEbL_7WzugrSfyeVwUnp1Fbd8V2D3mCY2_vY3QYA9kTX9sLO6w55NXWrHGKK7IT6zveOCnJKv06KrG6bwVlgsaJixS_cO3bmO7kdwPSnYXlvdynUO-6DK88MgSM6jYYd7kfoubmZsi5hZqo7BLrJWnQP75-tqsu207D5shj9NLt2rz8bF_c_ylub0g4fTlFyZuLNCEAQPs-obid-sOF79H4KI9ibVWB89D"
+                src={heroMiddlePhoto.src}
                 tapes={["pp-tape-center pp-tape-secondary"]}
               />
               <PhotoFrame
                 alt="Genuine connection between two friends"
                 className="pp-hero-photo-side pp-hero-photo-left"
                 imageClassName="pp-square-photo"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsfqexP59qYqWZDZ6jD-rLvGqnVQwGMAWEX5vfl28nG55iCmjacZlLx4Cf7NVcxgGyxtLU-GazXrS01Ca-7OOyCVjtdO5s2ZquLeaYsrEatu8Id55KhLyD5g5f7Va8DuBUWJ7ya_7S5aIRBLy9jKf4VcC2nP1mcWOgJK2sZ_Ati3crG3IRNKeFoHnADIkacKhtkm8gv-8gIzawjnTaqEbrUEklRRRhBifcwtnDQrVnB-_djDwuBa-g00LNis-pDmMgfikdxsEk2Anv"
+                src={heroBottomPhoto.src}
                 tapes={["pp-tape-top-right"]}
               />
               <PhotoFrame
                 alt="High-fiving and celebrating independence"
                 className="pp-hero-photo-side pp-hero-photo-right"
                 imageClassName="pp-square-photo"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDajeP1ufKW36Cd4hJcYgIeE0XqX32aHbjyowhenb5sp0YIJ2vxD7Zk-p1UPZzL8JPF5qd_M-6MCWJybBsUjaOvvlDAPgZwJewl6CZZG7LWwX6iYdt8Q42jyW2XSaZMgBdHdwnozA_jFOGwl8RPIXHkEl27QX7lYgKekwV1HOwiOp3dWi97aZ--vobBw5cZofayTdd_dgmokoaQXyGWk11MQfYSuQsxNv6AC-3wrG9Nsi0U7WM_SsoGyI4TqZkODrf0jdHbUc2Kr6BE"
+                src={heroTopPhoto.src}
                 tapes={["pp-tape-top-left pp-tape-tertiary"]}
               />
             </div>
@@ -424,14 +431,14 @@ export default function Home() {
               alt="Person with disability making choices during a meal"
               className="pp-about-photo-a"
               imageClassName="pp-about-portrait"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUwvQdkyP-agkAFCMWRHQAs-PKD5ghsT-fFxZ3FqNeW77PaHOPV6UnJzUesVjoAnimop-85wRTUcoYG2S6nsvM_vW823Ft07MSH3-RR1-QsTAZy1P5IAXqRNQqeJywChoN_Q8hfHSg9c37TTvGSfe-dE8ztL9OddTUcjbG8KTcIKZIMTgjzsmcRU0Ec6Fl-wC2P4Sa9GBKAwOx7nzc9gZeUsciv9y6Ry6e5bpNNiAGavDIRIMbcAV-tqeG1Udn8GZozM-1MVf9tku-"
+              src={aboutLeftPhoto.src}
               tapes={["pp-tape-top-right"]}
             />
             <PhotoFrame
               alt="Authentic interaction at a community workshop"
               className="pp-about-photo-b"
               imageClassName="pp-about-square"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYm1bUmBwt3Z_VwBLdV_2FKRp9EOyj4mn7ZmtUbKawC48O1N0mCA9tNFDR1BsDARryFNhyKQqxcX3MXgLmoZLWJK_2vNUkCZuUdA1aS1SNR5LnSAQ3kFqCCA6q2sWDLPEm2B9YbV1VbwucTcSMRSIG_dZLEAJQCdSwFCV0AquN-afOU9IXvgGnGGfUjxdgSHIOrVc8OLGRHjMozmOqqBK5YkqGHEsQNZyF2hsRUoOSgX-DSLsLqVmipMmjGcXGzHjN0-D-Sux1M5uE"
+              src={aboutRightPhoto.src}
               tapes={["pp-tape-top-left pp-tape-secondary"]}
             />
             <PhotoFrame
@@ -487,14 +494,14 @@ export default function Home() {
               alt="Real moment of connection between participant and advocate"
               className="pp-reasons-main-photo"
               imageClassName="pp-reasons-main-image"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm9qE1Jx33QShYuDIx8jI2IPbxbppIoreZU4uWWTttDdpu3eRn8pyLSVNcEh2G4LnyUaZQqyYqjQT1COJb6fn8klKIpwPRrIorjRLUsURSjRTYga_vHhSUxhMw4P6r8EohgAk1RSxTyZ-AikG8KlPnFpjjJaho4ekyFUZWOUS5XHYJN8mrjRCu6IL2FNuEinw-PdLEe0UOmnnJi0mNBOB7OSNkUJQ8FtQuvZTtViUcfrkuM2MrRH9tkWroo9l_GfOppvDvUgzaOnC1"
+              src={reasonsMainPhoto.src}
               tapes={["pp-tape-top-left pp-tape-secondary", "pp-tape-top-right"]}
             />
             <PhotoFrame
               alt="Joyful smile of a person achieving a personal milestone"
               className="pp-reasons-side-photo"
               imageClassName="pp-square-photo"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCTC7OhIQlAFi3DzRi0npbeTuiI94pdJMZHitZu5Cm-CpmtB_wLGXszJobJzZtaGXpVS5Myaj0iWloOnIRYRzcDw94kZZ7duLCLtVTgqhDFTcU6uxF-tQCxfnQuGbBMJ_omlmoZwBY7YrebOBzWc2ot97Dw7pfCJke8_qibPu6tafFJZmyqduFTTJ3e6UvS0T_WbY_agEti7oHy2JJ1Zl-XaZVGTgYmacggzKrwaDa-XBw49aZ00b6ywgOkYPqKZdFwWlpbchmbl0a"
+              src={reasonsSidePhoto.src}
               tapes={["pp-tape-center pp-tape-short"]}
             />
           </div>
