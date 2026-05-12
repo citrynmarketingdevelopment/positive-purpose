@@ -51,10 +51,10 @@ const serviceCards = [
     cardClass: "pp-service-card-tilt-left",
   },
   {
-    icon: "groups",
-    title: "Coordinated Family Support",
+    icon: "sparkles",
+    title: "Social Recreation",
     description:
-      "Bridging the gap between the individual and their support system with holistic family-centered care.",
+      "Our Social Recreation Program aims to provide inclusive, engaging social opportunities in our local community and beyond. Our calendar changes monthly!",
     href: "#contact",
     accentClass: "pp-service-accent-tertiary",
     iconClass: "pp-icon-badge-tertiary",
@@ -163,7 +163,18 @@ const contactItems = [
   },
 ];
 
-const socialIcons = ["globe", "community"];
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/profile.php?id=61575768532932",
+    icon: "facebook",
+    label: "Follow us on Facebook",
+  },
+  {
+    href: "https://www.tiktok.com/@positive.purpose?_r=1&_t=ZT-965axTtN4ft",
+    icon: "tiktok",
+    label: "Follow us on TikTok",
+  },
+];
 
 function Icon({ name, className = "" }) {
   const icons = {
@@ -201,6 +212,13 @@ function Icon({ name, className = "" }) {
         <circle cx="10.5" cy="9" r="3.5" />
         <path d="M21 20v-1a3.5 3.5 0 0 0-2.75-3.42" />
         <path d="M16.5 5.6a3.5 3.5 0 0 1 0 6.8" />
+      </>
+    ),
+    sparkles: (
+      <>
+        <path d="m12 3 1.75 4.25L18 9l-4.25 1.75L12 15l-1.75-4.25L6 9l4.25-1.75Z" />
+        <path d="m18.5 14.5.85 2.15 2.15.85-2.15.85-.85 2.15-.85-2.15-2.15-.85 2.15-.85Z" />
+        <path d="m5.5 14.5.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7Z" />
       </>
     ),
     apartment: (
@@ -271,6 +289,17 @@ function Icon({ name, className = "" }) {
         <path d="M3 12h18" />
         <path d="M12 3a15 15 0 0 1 0 18" />
         <path d="M12 3a15 15 0 0 0 0 18" />
+      </>
+    ),
+    facebook: (
+      <>
+        <path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v5h3v-5h2.25l.4-3H14v-1.5c0-.7.3-1.5 1.5-1.5H17V6h-2Z" />
+      </>
+    ),
+    tiktok: (
+      <>
+        <path d="M14 4v8.1a3.35 3.35 0 1 1-2.35-3.2" />
+        <path d="M14 4a4.2 4.2 0 0 0 4.2 4.2" />
       </>
     ),
   };
@@ -612,10 +641,17 @@ export default function Home() {
               high-quality experience.
             </p>
             <div className="pp-social-row">
-              {socialIcons.map((icon) => (
-                <button key={icon} className="pp-social-button" type="button">
-                  <Icon name={icon} />
-                </button>
+              {socialLinks.map((social) => (
+                <a
+                  key={social.href}
+                  aria-label={social.label}
+                  className="pp-social-button"
+                  href={social.href}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <Icon name={social.icon} />
+                </a>
               ))}
             </div>
           </div>
@@ -653,7 +689,8 @@ export default function Home() {
             <h3 className="pp-footer-heading">Get In Touch</h3>
             <div className="pp-hours-card">
               <p className="pp-hours-label">Office Hours</p>
-              <p className="pp-hours-value">Mon - Fri: 8am - 5pm</p>
+              <p className="pp-hours-value">Mon - Thu: 8am - 5pm</p>
+              <p className="pp-hours-value">Fri: 9am - 3pm</p>
               <p className="pp-hours-note">Sat - Sun: Emergency Support</p>
               <div className="pp-hours-contact">
                 <p>
