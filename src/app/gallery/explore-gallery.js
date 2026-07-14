@@ -82,11 +82,14 @@ export default function ExploreGallery({ cards }) {
       <section className={styles.exploreSection}>
         <div className={styles.exploreHeader}>
           <div className={styles.exploreIntro}>
-            <h2 className={styles.sectionTitle}>Explore Our World</h2>
+            <h2 className={styles.sectionTitle}>
+              HCBS Final Rule Video Series - Learn at your own pace with our
+              English &amp; Spanish Video Collection
+            </h2>
             <p className={styles.sectionCopy}>
-              A window into the lives, journeys, and celebrations that define
-              Positive Purpose. Filter by category to find specific videos of
-              impact.
+              Browse practical video topics covering rights, settings,
+              person-centered planning, and service expectations under the HCBS
+              Final Rule.
             </p>
           </div>
           <div className={styles.filterGroup}>
@@ -97,10 +100,10 @@ export default function ExploreGallery({ cards }) {
               All Videos
             </button>
             <button className={styles.filterButton} type="button">
-              Activities
+              English
             </button>
             <button className={styles.filterButton} type="button">
-              Staff Stories
+              Spanish
             </button>
           </div>
         </div>

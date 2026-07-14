@@ -1,6 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Link from "next/link";
 import SiteHeader from "../../components/site-header";
+import heroBackgroundPhoto from "../../assets/new/IMG_7296.webp";
+import videoCardPhotoA from "../../assets/new/IMG_5375.webp";
+import videoCardPhotoB from "../../assets/new/IMG_5825.webp";
+import videoCardPhotoC from "../../assets/new/IMG_5829.webp";
+import videoCardPhotoD from "../../assets/new/IMG_5990.webp";
+import videoCardPhotoE from "../../assets/new/IMG_6033.webp";
+import videoCardPhotoF from "../../assets/new/IMG_7233.webp";
 import ExploreGallery from "./explore-gallery";
 import styles from "./page.module.css";
 
@@ -9,45 +17,45 @@ const placeholderVideoUrl =
 
 const exploreCards = [
   {
-    category: "Community",
-    title: "Meet the Support Team",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCMDKdrZfwTv3W-hP59yBxjaWoXn5n9yvJWGySPPEOrpiwnrZneeJd9Z-r99JoVoE4JbB0LT7C9RbJouSnWbmWEwT5kElEkrsBnJBGvV4-V4Uhl5lsFsecDfy3Tafc44OP47mgBKzXf7Ko1Z4jPhdbqmQqA3PSyyZyAbwqgbZXizn686-1zpbo64nXx9azrmv12HJrJpmUE-q9d5UAMfBHCvOW4wsEJcbVt1bOBcsADVtCLPs9Qc6_rpBzFWf74uAEKsbKDLfTq89pk",
-    alt: "Meet the Support Team",
+    category: "Individuals",
+    title: "What the HCBS Final Rule Means for Individuals",
+    src: videoCardPhotoA.src,
+    alt: "Group smiling together during a community outing",
     videoUrl: placeholderVideoUrl,
   },
   {
-    category: "Creative Arts",
-    title: "Annual Art Showcase",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCsbMw15jTEVedCTkMSilP3wQSvUpxO_9b0QlYZvy8j917RGiZAV2c80iRAWwfkmXrHkc2fU5rhUZlyOCOx3h2ADohLfP9aci324CN6KoUTDDGHojybBCEBS1AwCNIx2sumjLz-jud8-cPzOaQrSl0EQyjoNlkHc7bUPpzx7FberCvvOCVTs6UGM7Z5jNKN4OEIWkw9TRw9UGgNoGzob8zc9bL4xVoXtC_uRE-WrUX7ZB72nNM_RU7E4Jhm6UygyTGdQE-RU42mRnn3",
-    alt: "Art Showcase",
+    category: "Families",
+    title: "Family Guide to Rights, Choice, and Community Inclusion",
+    src: videoCardPhotoB.src,
+    alt: "Participant enjoying an arcade outing",
     videoUrl: placeholderVideoUrl,
   },
   {
-    category: "Wellness",
-    title: "Morning Yoga Sessions",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDXFWe6dXOjFpJgunb03NkHgpT6fAYdNGOBmT2bhZ_aCfDJp5R36j8TaPBXu2n2vK-TF3Ty3PLEEWo_WY9q0PT22VvMzorU-yAk_viMHXBdoT3xWdlMPeo3pxvRaoWHxqy5wqUqZBqw-zci6rtWKVR08Hd26DcZd3hRJBhojwHbextfePEPZPERNaPjzypLYd-4D4o6zG9_31Sz12moCVYphsckWvvanUlmMqozmsy5T9pheQ8G4nBsJHQ_2XT7JHYlmoZLFxfXj3rs",
-    alt: "Yoga Session",
+    category: "Providers",
+    title: "Provider Responsibilities Under the HCBS Final Rule",
+    src: videoCardPhotoC.src,
+    alt: "Participant smiling inside a recreation venue",
     videoUrl: placeholderVideoUrl,
   },
   {
-    category: "Success Stories",
-    title: "David's Career Path",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDRA_FipOKMoJxPqRSC8YFYP_7TAW9UlRelXw5pngRmWPHmhsPChbhIJ8xnBvcRLtJXHY1Ih8dun-lLbjUSAfzRuCO8pWjoTwvDDouCogRBGvL1XpsVEgLJv10hMLl64iHIQurn0wctQenAWS_wz2rSXmRJGbM0C_uIHBm-mDeR1gb-gH7JB_soelviUN-XFcNMC__e11dO_46x2OVTAcdE6hdkwYb0eFe7aHPCNaOFKs898k6kIvR30ZJEuPhJb9UIuPFU65hYFd4W",
-    alt: "David's Career",
+    category: "DSP Training",
+    title: "Direct Support Professional Essentials",
+    src: videoCardPhotoD.src,
+    alt: "Participants gathered around a table during a social activity",
     videoUrl: placeholderVideoUrl,
   },
   {
-    category: "Community",
-    title: "Weekend Social Recap",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAF84Fad4xiXxBm8fa037RD3QU-lfHfImqEf3IE6CEZSvXzhWNNMZEA7z9Nf-jtAsSCRxfbhmeNYemXIpy0lRJxMG8ccBXQqyGKUyxB4FiVFnjDZ6vciAgbYfeyOR5JEyYuCYyQYdHK3Kj3GCLbQzX6OlY_B1PhDDCAYFG0tVkc3CDo5Wnu0PGLGk_8rM8Q_IISMp8j3t4xBWi2vcZXqCt8x7I5RSXEjTzi0qozMVas7X6t0RfMuxmbn3sOrUd1p3EhDNdp88ZohILu",
-    alt: "Weekend Social Recap",
+    category: "English",
+    title: "Person-Centered Planning in Everyday Practice",
+    src: videoCardPhotoE.src,
+    alt: "Two women seated together at dinner",
     videoUrl: placeholderVideoUrl,
   },
   {
-    category: "Activities",
-    title: "Community Garden Project",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCcKKkS-mgD5fX2qrfhPgu3NKokF5ZlXWHuKxsOMhuquNulqMDEraLQuT80jiVI64YMzlFhzozLz5--zZ3Owin4w6o1h60frrG9--j1AoCn--NHwPyUGUniIrkV1Kn2WDP36UOxDPXMzq3SFlFLUl_Mip4njGUsQoHFWDjlonAYKWztUo35H47mi38rn2KGAszXMMj5H3Db4IaCNNONPCy26prwrttXcCkEXbB7VPrRQS9ICGKYzVMj8QsPrLWejTMLI701LfnyprwT",
-    alt: "Community Garden Project",
+    category: "Spanish",
+    title: "HCBS Final Rule Overview in Spanish",
+    src: videoCardPhotoF.src,
+    alt: "Participant smiling while showing painted artwork",
     videoUrl: placeholderVideoUrl,
   },
 ];
@@ -90,7 +98,7 @@ function Icon({ name, className = "" }) {
 }
 
 export const metadata = {
-  title: "Positive Purpose | Gallery",
+  title: "Positive Purpose | HCBS Resource Library",
 };
 
 export default function GalleryPage() {
@@ -103,27 +111,23 @@ export default function GalleryPage() {
       <section className={styles.heroSection}>
         <div className={styles.heroBackground}>
           <img
-            alt="Community Garden Project"
+            alt="Group walking together during a Positive Purpose community outing"
             className={styles.heroImage}
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcKKkS-mgD5fX2qrfhPgu3NKokF5ZlXWHuKxsOMhuquNulqMDEraLQuT80jiVI64YMzlFhzozLz5--zZ3Owin4w6o1h60frrG9--j1AoCn--NHwPyUGUniIrkV1Kn2WDP36UOxDPXMzq3SFlFLUl_Mip4njGUsQoHFWDjlonAYKWztUo35H47mi38rn2KGAszXMMj5H3Db4IaCNNONPCy26prwrttXcCkEXbB7VPrRQS9ICGKYzVMj8QsPrLWejTMLI701LfnyprwT"
+            src={heroBackgroundPhoto.src}
           />
           <div className={styles.heroOverlay} />
         </div>
 
         <div className={styles.heroContent}>
           <div className={styles.heroCopy}>
-            <span className={styles.heroTag}>Our Impact</span>
-            <h1 className={styles.heroTitle}>
-              Moments of{" "}
-              <span className={styles.heroTitleAccent}>Joy &amp; Growth</span>
-            </h1>
+            <span className={styles.heroTag}>HCBS Education</span>
+            <h1 className={styles.heroTitle}>HCBS Resource Library</h1>
             <p className={styles.heroText}>
-              Experience the vibrant daily life at Positive Purpose through our
-              curated collection of stories, achievements, and community
-              milestones.
+              Discover what the HCBS Final Rule means for individuals
+              receiving services, families, providers, and direct support
+              professionals.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -131,24 +135,27 @@ export default function GalleryPage() {
 
       <section className={styles.ctaSection}>
         <div className={styles.ctaInner}>
-          <h2 className={styles.ctaTitle}>Be Part of the Story</h2>
+          <h2 className={styles.ctaTitle}>Ready to take the next step?</h2>
           <p className={styles.ctaCopy}>
-            Our videos only capture a glimpse of the empowerment happening
-            every day. Join us to experience it firsthand.
+            Positive Purpose is here to support individuals and families with
+            person-centered services that promote independence, growth, and
+            community involvement. If you&apos;re interested in receiving
+            services or joining a compassionate team dedicated to making a
+            difference, contact us today.
           </p>
           <div className={styles.ctaActions}>
-            <a
+            <Link
               className={`${styles.ctaButton} ${styles.ctaButtonPrimary}`.trim()}
-              href="#"
+              href="/#contact"
             >
-              Get Involved
-            </a>
-            <a
+              Contact Us
+            </Link>
+            <Link
               className={`${styles.ctaButton} ${styles.ctaButtonSecondary}`.trim()}
-              href="#"
+              href="/#careers"
             >
-              Request a Consultation
-            </a>
+              Explore Careers
+            </Link>
           </div>
         </div>
       </section>
@@ -156,10 +163,11 @@ export default function GalleryPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div className={styles.footerBrandCol}>
-            <div className={styles.footerBrand}>Editorial Inclusivity</div>
+            <div className={styles.footerBrand}>Positive Purpose</div>
             <p className={styles.footerCopy}>
-              Creating a world where every story is heard and every individual
-              is empowered to grow.
+              At Positive Purpose, we believe every individual deserves the
+              opportunity to live with dignity, independence, and meaningful
+              community inclusion.
             </p>
             <div className={styles.footerSocials}>
               <button className={styles.footerSocial} type="button">
@@ -175,13 +183,13 @@ export default function GalleryPage() {
             <h3 className={styles.footerHeading}>Explore</h3>
             <ul className={styles.footerList}>
               <li>
-                <a href="#">Mission</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <Link href="/#services">Services</Link>
               </li>
               <li>
-                <a href="#">Partnerships</a>
+                <Link href="/#contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -204,7 +212,8 @@ export default function GalleryPage() {
           <div>
             <h3 className={styles.footerHeading}>Newsletter</h3>
             <p className={styles.footerNewsletterCopy}>
-              Stay updated with our latest stories.
+              Sign up to get monthly updates and our monthly social recreation
+              calendar
             </p>
             <div className={styles.newsletterField}>
               <input
@@ -220,7 +229,7 @@ export default function GalleryPage() {
         </div>
 
         <div className={styles.footerBottom}>
-          &copy; {year} Editorial Inclusivity. All rights reserved.
+          &copy; {year} Positive Purpose LLC. All rights reserved.
         </div>
       </footer>
     </main>

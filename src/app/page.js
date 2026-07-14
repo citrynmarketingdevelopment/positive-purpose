@@ -1,12 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import SiteHeader, { siteNavLinks } from "../components/site-header";
-import heroMiddlePhoto from "../assets/positive-purpose-01.webp";
+import galleryPhotoA from "../assets/new/IMG_5825.webp";
+import galleryPhotoB from "../assets/new/IMG_6033.webp";
+import galleryPhotoC from "../assets/new/IMG_7535.webp";
+import galleryPhotoD from "../assets/new/IMG_5393.webp";
+import heroMiddlePhoto from "../assets/new/IMG_5375.webp";
 import heroTopPhoto from "../assets/positive-purpose-02.webp";
-import heroBottomPhoto from "../assets/positive-purpose-03.webp";
-import aboutRightPhoto from "../assets/positive-purpose-05.webp";
+import aboutRightPhoto from "../assets/new/IMG_5990.webp";
+import aboutLandscapePhoto from "../assets/new/IMG_7296.webp";
+import reasonsSidePhoto from "../assets/new/IMG_7233.webp";
+import heroBottomPhoto from "../assets/new/IMG_5829.webp";
 import aboutLeftPhoto from "../assets/positive-purpose-06.webp";
-import reasonsMainPhoto from "../assets/positive-purpose-08.webp";
-import reasonsSidePhoto from "../assets/positive-purpose-09.webp";
+import galleryPhotoE from "../assets/new/IMG_5977.webp";
+import reasonsMainPhoto from "../assets/positive-purpose-05.webp";
+import galleryPhotoF from "../assets/positive-purpose-01.webp";
+import galleryPhotoG from "../assets/positive-purpose-08.webp";
+import galleryPhotoH from "../assets/positive-purpose-09.webp";
 
 const commitmentItems = [
   {
@@ -88,57 +97,57 @@ const reasonItems = [
 
 const galleryPhotos = [
   {
-    src: heroTopPhoto.src,
-    alt: "Celebration at a community gathering",
+    src: galleryPhotoF.src,
+    alt: "Two participants smiling together at a community picnic",
     frameClass: "pp-gallery-card-a",
     tapeClass: "pp-tape-center pp-tape-primary",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: heroMiddlePhoto.src,
-    alt: "Outdoor picnic with friends",
+    src: galleryPhotoG.src,
+    alt: "Participant enjoying an adaptive beach outing",
     frameClass: "pp-gallery-card-b",
     tapeClass: "pp-tape-top-right",
     imageClass: "pp-gallery-image-tall",
   },
   {
-    src: aboutRightPhoto.src,
-    alt: "Collaborative art project",
+    src: galleryPhotoA.src,
+    alt: "Community member enjoying an arcade outing",
     frameClass: "pp-gallery-card-c",
     tapeClass: "pp-tape-top-left pp-tape-secondary",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: aboutLeftPhoto.src,
-    alt: "Holiday dinner celebration",
+    src: galleryPhotoB.src,
+    alt: "Two women sharing a meal together",
     frameClass: "pp-gallery-card-d",
     tapeClass: "pp-tape-center",
     imageClass: "pp-gallery-image-medium",
   },
   {
-    src: reasonsSidePhoto.src,
-    alt: "Friends laughing together at a cafe",
+    src: galleryPhotoE.src,
+    alt: "Beach day with adaptive recreation support",
     frameClass: "pp-gallery-card-e",
     tapeClass: "pp-tape-top-left pp-tape-tertiary",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: heroBottomPhoto.src,
-    alt: "Person with disability learning guitar",
+    src: galleryPhotoC.src,
+    alt: "Bowling activity during an evening community outing",
     frameClass: "pp-gallery-card-f",
     tapeClass: "pp-tape-top-right",
     imageClass: "pp-gallery-image-short",
   },
   {
-    src: reasonsMainPhoto.src,
-    alt: "Shared supportive moment",
+    src: galleryPhotoH.src,
+    alt: "Group celebrating together at a local event",
     frameClass: "pp-gallery-card-g",
     tapeClass: "pp-tape-center pp-tape-primary",
     imageClass: "pp-gallery-image-tall",
   },
   {
-    src: aboutRightPhoto.src,
-    alt: "Community volunteer activity",
+    src: galleryPhotoD.src,
+    alt: "Participants sitting together during a community outing",
     frameClass: "pp-gallery-card-h",
     tapeClass: "pp-tape-top-left",
     imageClass: "pp-gallery-image-short",
@@ -158,8 +167,8 @@ const contactItems = [
   },
   {
     icon: "location",
-    label: "Visit Local Office",
-    value: "In the heart of your community",
+    label: "Office Address",
+    value: "8501 Brimhall Rd #401, Bakersfield, CA 93312",
   },
 ];
 
@@ -174,6 +183,21 @@ const socialLinks = [
     icon: "tiktok",
     label: "Follow us on TikTok",
   },
+];
+
+const careerRequirements = [
+  "A completed employment application",
+  "A valid driver's license",
+  "Current vehicle registration",
+  "Proof of current automobile insurance",
+];
+
+const consultingServices = [
+  "Development and review of program designs",
+  "HCBS Final Rule education and compliance",
+  "Vendorization guidance and operational support",
+  "General consultation for service providers and agency leadership",
+  "Best practices for person-centered service delivery",
 ];
 
 function Icon({ name, className = "" }) {
@@ -405,7 +429,7 @@ export default function Home() {
           <div className="pp-hero-media">
             <div className="pp-hero-stack">
               <PhotoFrame
-                alt="Adult with disability and support staff member laughing together outdoors"
+                alt="Support team members and participants smiling together during a community ride"
                 className="pp-hero-photo-main"
                 imageClassName="pp-hero-main-image"
                 priority
@@ -413,14 +437,14 @@ export default function Home() {
                 tapes={["pp-tape-center pp-tape-secondary"]}
               />
               <PhotoFrame
-                alt="Genuine connection between two friends"
+                alt="Participant smiling during a community outing"
                 className="pp-hero-photo-side pp-hero-photo-left"
                 imageClassName="pp-square-photo"
                 src={heroBottomPhoto.src}
                 tapes={["pp-tape-top-right"]}
               />
               <PhotoFrame
-                alt="High-fiving and celebrating independence"
+                alt="Two people posing together outside the office"
                 className="pp-hero-photo-side pp-hero-photo-right"
                 imageClassName="pp-square-photo"
                 src={heroTopPhoto.src}
@@ -457,24 +481,24 @@ export default function Home() {
 
           <div className="pp-about-collage">
             <PhotoFrame
-              alt="Person with disability making choices during a meal"
+              alt="Three young adults posing together outside"
               className="pp-about-photo-a"
               imageClassName="pp-about-portrait"
               src={aboutLeftPhoto.src}
               tapes={["pp-tape-top-right"]}
             />
             <PhotoFrame
-              alt="Authentic interaction at a community workshop"
+              alt="Participants gathered around a table during a social activity"
               className="pp-about-photo-b"
               imageClassName="pp-about-square"
               src={aboutRightPhoto.src}
               tapes={["pp-tape-top-left pp-tape-secondary"]}
             />
             <PhotoFrame
-              alt="Person with disability enjoying a walk in the local park"
+              alt="Group walking together during a community outing"
               className="pp-about-photo-c"
               imageClassName="pp-about-landscape"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdM6srwbKe25GzdJrpdlY7ku4ZSqrUllIjXEdMGmMyZWiu4t9fGdT1qrYRm-tjnLwZ4yowjBITRvJNFZb_RLPr5Rt6uS6T1LR6l6BI9zuhmJZcHkAlLS6r4jZWYH-_Bz-ztqh5BwEGqkPFC4gsdgc3ZQpqpdwy3pjVF8bsCk7qpMY2hKE64O5vMZpAZyD1SjX4ONYryuwUS9GGTqodTPDPQPuihvfjFBERp6VU55XzXbCA24AB-NcpyfO63b1CJQ25zLPymoMlrqqy"
+              src={aboutLandscapePhoto.src}
               tapes={["pp-tape-center"]}
             />
           </div>
@@ -520,14 +544,14 @@ export default function Home() {
 
           <div className="pp-reasons-media">
             <PhotoFrame
-              alt="Real moment of connection between participant and advocate"
+              alt="Group photo outside during a community program"
               className="pp-reasons-main-photo"
               imageClassName="pp-reasons-main-image"
               src={reasonsMainPhoto.src}
               tapes={["pp-tape-top-left pp-tape-secondary", "pp-tape-top-right"]}
             />
             <PhotoFrame
-              alt="Joyful smile of a person achieving a personal milestone"
+              alt="Participant smiling while showing painted artwork"
               className="pp-reasons-side-photo"
               imageClassName="pp-square-photo"
               src={reasonsSidePhoto.src}
@@ -564,6 +588,145 @@ export default function Home() {
                 tapes={[photo.tapeClass]}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pp-section pp-resource-section" id="mission">
+        <div className="pp-shell pp-resource-shell">
+          <div className="pp-section-intro pp-resource-intro">
+            <h2 className="pp-section-title">Mission, Careers &amp; Consulting</h2>
+            <p className="pp-section-subtitle pp-resource-subtitle">
+              Learn more about our mission, employment opportunities, and
+              professional consulting services.
+            </p>
+          </div>
+
+          <div className="pp-resource-grid">
+            <article className="pp-canvas-card pp-paper-stack pp-resource-card pp-resource-card-mission">
+              <div className="pp-resource-kicker">Mission</div>
+              <h3 className="pp-card-title pp-resource-title">Our mission</h3>
+              <p className="pp-resource-copy">
+                Positive Purpose is an organization committed to enhancing the
+                quality of life for intellectually challenged individuals, their
+                family units, and the support team serving them. Positive
+                Purpose was created to provide supported living, and community
+                based residential services, to people with physical,
+                developmental and intellectual disabilities. We utilize
+                individual service plans to provide training to enhance skill
+                development, promote independence and increase community
+                inclusion.
+              </p>
+            </article>
+
+            <article
+              className="pp-canvas-card pp-paper-stack pp-resource-card pp-resource-card-careers"
+              id="careers"
+            >
+              <div className="pp-resource-kicker">Careers</div>
+              <h3 className="pp-card-title pp-resource-title">
+                Join the Positive Purpose Team
+              </h3>
+              <p className="pp-resource-copy">
+                At Positive Purpose, we&apos;re always looking for compassionate,
+                dependable individuals who are passionate about making a
+                difference in the lives of others.
+              </p>
+              <div className="pp-resource-actions">
+                <a
+                  className="pp-button pp-button-primary pp-resource-button"
+                  download="PositivePurposeEmploymentApplication.pdf"
+                  href="/employment-application.pdf"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  View or Download Application
+                </a>
+              </div>
+              <p className="pp-resource-subheading">
+                To apply, please visit our office in person with:
+              </p>
+              <ul className="pp-resource-list">
+                {careerRequirements.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <p className="pp-resource-copy">
+                Qualified applicants may be required to complete a
+                pre-employment drug screening. Relevant experience and
+                professional references are encouraged and will be considered
+                during the hiring process.
+              </p>
+              <p className="pp-resource-copy">
+                Positive Purpose is proud to be an Equal Opportunity Employer.
+                We are committed to creating an inclusive workplace where all
+                qualified applicants receive equal consideration for employment
+                regardless of race, color, religion, sex, national origin, age,
+                disability, veteran status, or any other protected
+                characteristic under applicable law.
+              </p>
+            </article>
+
+            <article
+              className="pp-canvas-card pp-paper-stack pp-resource-card pp-resource-card-consulting"
+              id="consulting"
+            >
+              <div className="pp-resource-kicker">Consulting</div>
+              <h3 className="pp-card-title pp-resource-title">
+                Consulting &amp; Professional Training
+              </h3>
+              <p className="pp-resource-copy">
+                With more than 25 years of experience serving individuals with
+                developmental and intellectual disabilities, Tamerla Prince
+                offers personalized consulting and professional training for
+                providers, agencies, and individuals looking to grow their
+                knowledge and succeed in the human services field.
+              </p>
+              <p className="pp-resource-copy">
+                As the owner of two vendored service agencies and a former
+                Vendor Advisory Chair, Tamerla has extensive experience
+                navigating California&apos;s developmental services system. She
+                provides one-on-one consultation tailored to your
+                organization&apos;s needs, whether you&apos;re starting a new
+                program, expanding existing services, or strengthening
+                compliance with state regulations.
+              </p>
+              <p className="pp-resource-subheading">
+                Consulting services include:
+              </p>
+              <ul className="pp-resource-list">
+                {consultingServices.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <p className="pp-resource-copy">
+                In addition to her developmental services expertise, Tamerla
+                owns and operates a Residential Care Facility for the Elderly
+                (RCFE) and offers consultation for individuals and
+                organizations interested in RCFE operations, regulatory
+                requirements, and quality care practices.
+              </p>
+              <p className="pp-resource-copy">
+                Tamerla is also a Direct Support Professional (DSP) Trainer
+                through the Fresno Regional Training Hub and a Certified CPI
+                (Crisis Prevention Institute) Instructor, providing engaging,
+                practical training designed to equip support professionals with
+                the knowledge and skills they need to deliver exceptional,
+                person-centered services.
+              </p>
+              <p className="pp-resource-copy">
+                Whether you&apos;re launching a new agency, enhancing an
+                existing program, seeking regulatory guidance, or looking for
+                high-quality staff training, Tamerla is committed to helping
+                you achieve your goals with practical expertise and
+                individualized support.
+              </p>
+              <p className="pp-resource-copy">
+                Contact Tamerla today to learn more about consulting services,
+                professional training opportunities, or to schedule a
+                personalized consultation.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -636,9 +799,13 @@ export default function Home() {
           <div className="pp-footer-brand-block">
             <h2 className="pp-footer-brand">Positive Purpose</h2>
             <p className="pp-footer-copy">
-              Rejecting the clinical for the human kaleidoscope, providing
-              dignified support services that are not just a necessity, but a
-              high-quality experience.
+              At Positive Purpose, we believe every individual deserves the
+              opportunity to live with dignity, independence, and meaningful
+              community inclusion. Whether you&apos;re seeking quality support
+              services for yourself or a loved one, or you&apos;re passionate
+              about making a difference in the lives of others, we&apos;d love
+              to hear from you. Contact us today to learn more about our
+              services or explore rewarding career opportunities with our team.
             </p>
             <div className="pp-social-row">
               {socialLinks.map((social) => (
@@ -677,7 +844,13 @@ export default function Home() {
                 <a href="#contact">Terms of Service</a>
               </li>
               <li>
-                <a href="#contact">Careers</a>
+                <a href="#mission">Mission</a>
+              </li>
+              <li>
+                <a href="#careers">Careers</a>
+              </li>
+              <li>
+                <a href="#consulting">Consulting</a>
               </li>
               <li>
                 <a href="#contact">Local Events</a>
@@ -693,6 +866,10 @@ export default function Home() {
               <p className="pp-hours-value">Fri: 9am - 3pm</p>
               <p className="pp-hours-note">Sat - Sun: Emergency Support</p>
               <div className="pp-hours-contact">
+                <p>
+                  <Icon className="pp-footer-inline-icon" name="location" />
+                  8501 Brimhall Rd #401, Bakersfield, CA 93312
+                </p>
                 <p>
                   <Icon className="pp-footer-inline-icon" name="mail" />
                   Tamerla@positivepurpose.net

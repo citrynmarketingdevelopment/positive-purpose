@@ -4,6 +4,9 @@ export const siteNavLinks = [
   { key: "home", href: "/", label: "Home" },
   { key: "about", href: "/#about", label: "About" },
   { key: "services", href: "/#services", label: "Services" },
+  { key: "mission", href: "/#mission", label: "Mission" },
+  { key: "careers", href: "/#careers", label: "Careers" },
+  { key: "consulting", href: "/#consulting", label: "Consulting" },
   { key: "videos", href: "/videos", label: "Videos" },
 ];
 
